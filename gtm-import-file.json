@@ -1,0 +1,1520 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2022-10-28 02:00:40",
+    "containerVersion": {
+        "path": "accounts/1925720039/containers/32038133/versions/0",
+        "accountId": "1925720039",
+        "containerId": "32038133",
+        "containerVersionId": "0",
+        "container": {
+            "path": "accounts/1925720039/containers/32038133",
+            "accountId": "1925720039",
+            "containerId": "32038133",
+            "name": "TEMPLATE",
+            "publicId": "GTM-N45PG42",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1596509268418",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/1925720039/containers/32038133/workspaces?apiLink=container",
+            "features": {
+                "supportUserPermissions": true,
+                "supportEnvironments": true,
+                "supportWorkspaces": true,
+                "supportGtagConfigs": false,
+                "supportBuiltInVariables": true,
+                "supportClients": false,
+                "supportFolders": true,
+                "supportTags": true,
+                "supportTemplates": true,
+                "supportTriggers": true,
+                "supportVariables": true,
+                "supportVersions": true,
+                "supportZones": true
+            },
+            "tagIds": [
+                "GTM-N45PG42"
+            ]
+        },
+        "tag": [
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "tagId": "6",
+                "name": "[TAG] GUA - Event - Click to Call",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "nonInteraction",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventCategory",
+                        "value": "Call"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_EVENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{*UPDATE* [VAR] GUA Tracking Code}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventAction",
+                        "value": "{{Click URL}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventLabel",
+                        "value": "{{Page Path}}"
+                    }
+                ],
+                "fingerprint": "1608166323446",
+                "firingTriggerId": [
+                    "5"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "tagId": "10",
+                "name": "[TAG] GUA - Tracking Code",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_PAGEVIEW"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{*UPDATE* [VAR] GUA Tracking Code}}"
+                    }
+                ],
+                "fingerprint": "1608166145288",
+                "firingTriggerId": [
+                    "2147479553"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "tagId": "12",
+                "name": "[TAG] GUA - Event - Newsletter Signup",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "nonInteraction",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventCategory",
+                        "value": "Newsletter"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_EVENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{*UPDATE* [VAR] GUA Tracking Code}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventAction",
+                        "value": "Signup"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventLabel",
+                        "value": "{{Page Path}}"
+                    }
+                ],
+                "fingerprint": "1608167488375",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "tagId": "13",
+                "name": "[TAG] GUA - Event - Contact Us",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "nonInteraction",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventCategory",
+                        "value": "Contact Form"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_EVENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{*UPDATE* [VAR] GUA Tracking Code}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventAction",
+                        "value": "Submission"
+                    }
+                ],
+                "fingerprint": "1608167050132",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "tagId": "19",
+                "name": "[TAG] GUA - Event - Click to Email",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "nonInteraction",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventCategory",
+                        "value": "Email"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_EVENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{*UPDATE* [VAR] GUA Tracking Code}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventAction",
+                        "value": "{{Click URL}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventLabel",
+                        "value": "{{Page Path}}"
+                    }
+                ],
+                "fingerprint": "1608166757117",
+                "firingTriggerId": [
+                    "3"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "tagId": "20",
+                "name": "[TAG] GUA - Event - Booking Form",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "nonInteraction",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventCategory",
+                        "value": "Booking"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_EVENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{*UPDATE* [VAR] GUA Tracking Code}}"
+                    }
+                ],
+                "fingerprint": "1608166118028",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "tagId": "21",
+                "name": "[TAG] GUA - Event - Quote",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "nonInteraction",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventCategory",
+                        "value": "Quote"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_EVENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{*UPDATE* [VAR] GUA Tracking Code}}"
+                    }
+                ],
+                "fingerprint": "1608166957054",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "tagId": "22",
+                "name": "[TAG] GUA - Event - Social Profile",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "nonInteraction",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventCategory",
+                        "value": "Social"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_EVENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{*UPDATE* [VAR] GUA Tracking Code}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventAction",
+                        "value": "{{[VAR] AEV - Click Hostname}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventLabel",
+                        "value": "{{Page Path}}"
+                    }
+                ],
+                "fingerprint": "1608166795257",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "tagId": "25",
+                "name": "[TAG] GUA - Event - External Link Click",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "nonInteraction",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventCategory",
+                        "value": "Outbound"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_EVENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{*UPDATE* [VAR] GUA Tracking Code}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventAction",
+                        "value": "{{[VAR] AEV - Element URL (Full)}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventLabel",
+                        "value": "{{Page Path}}"
+                    }
+                ],
+                "fingerprint": "1608166172112",
+                "firingTriggerId": [
+                    "24"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "tagId": "27",
+                "name": "[TAG] GUA - Event - Scroll Depth",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "nonInteraction",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventCategory",
+                        "value": "Scroll Depth"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_EVENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{*UPDATE* [VAR] GUA Tracking Code}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventAction",
+                        "value": "{{Page Path}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventLabel",
+                        "value": "{{Scroll Depth Threshold}}%"
+                    }
+                ],
+                "fingerprint": "1608166156632",
+                "firingTriggerId": [
+                    "26"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "tagId": "28",
+                "name": "[TAG] cHTML - AJAX Listener",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script id=\"gtm-jq-ajax-listen\" type=\"text/javascript\">\n (function() {\n \n 'use strict';\n var $;\n var n = 0;\n init();\n \n function init(n) {\n \n // Ensure jQuery is available before anything\n if (typeof jQuery !== 'undefined') {\n \n // Define our $ shortcut locally\n $ = jQuery;\n bindToAjax();\n \n // Check for up to 10 seconds\n } else if (n < 20) {\n \n n++;\n setTimeout(init, 500);\n \n }\n \n }\n \n function bindToAjax() {\n \n $(document).bind('ajaxComplete', function(evt, jqXhr, opts) {\n \n // Create a fake a element for magically simple URL parsing\n var fullUrl = document.createElement('a');\n fullUrl.href = opts.url;\n \n // IE9+ strips the leading slash from a.pathname because who wants to get home on time Friday anyways\n var pathname = fullUrl.pathname[0] === '/' ? fullUrl.pathname : '/' + fullUrl.pathname;\n // Manually remove the leading question mark, if there is one\n var queryString = fullUrl.search[0] === '?' ? fullUrl.search.slice(1) : fullUrl.search;\n // Turn our params and headers into objects for easier reference\n var queryParameters = objMap(queryString, '&', '=', true);\n var headers = objMap(jqXhr.getAllResponseHeaders(), '\\n', ':');\n \n // Blindly push to the dataLayer because this fires within GTM\n dataLayer.push({\n 'event': 'ajaxComplete',\n 'attributes': {\n // Return empty strings to prevent accidental inheritance of old data\n 'type': opts.type || '',\n 'url': fullUrl.href || '',\n 'queryParameters': queryParameters,\n 'pathname': pathname || '',\n 'hostname': fullUrl.hostname || '',\n 'protocol': fullUrl.protocol || '',\n 'fragment': fullUrl.hash || '',\n 'statusCode': jqXhr.status || '',\n 'statusText': jqXhr.statusText || '',\n 'headers': headers,\n 'timestamp': evt.timeStamp || '',\n 'contentType': opts.contentType || '',\n // Defer to jQuery's handling of the response\n 'response': (jqXhr.responseJSON || jqXhr.responseXML || jqXhr.responseText || '')\n }\n });\n \n });\n \n }\n \n function objMap(data, delim, spl, decode) {\n \n var obj = {};\n \n // If one of our parameters is missing, return an empty object\n if (!data || !delim || !spl) {\n \n return {};\n \n }\n \n var arr = data.split(delim);\n var i;\n \n if (arr) {\n \n for (i = 0; i < arr.length; i++) {\n \n // If the decode flag is present, URL decode the set\n var item = decode ? decodeURIComponent(arr[i]) : arr[i];\n var pair = item.split(spl);\n \n var key = trim_(pair[0]);\n var value = trim_(pair[1]);\n \n if (key && value) {\n \n obj[key] = value;\n \n }\n \n }\n \n }\n \n return obj;\n \n }\n \n // Basic .trim() polyfill\n function trim_(str) {\n \n if (str) {\n \n return str.replace(/^[\\s\\uFEFF\\xA0]+|[\\s\\uFEFF\\xA0]+$/g, '');\n \n }\n \n }\n \n \n })();\n /*\n * v0.1.0\n * Created by the Google Analytics consultants at http://www.lunametrics.com\n * Written by @notdanwilkerson\n * Documentation: http://www.lunametrics.com/blog/2015/08/27/ajax-event-listener-google-tag-manager/\n * Licensed under the Creative Commons 4.0 Attribution Public License\n */\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1601504797060",
+                "firingTriggerId": [
+                    "2147479553"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "tagId": "33",
+                "name": "[TAG] GA4 - Event - Booking Form",
+                "type": "gaawe",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "sendEcommerceData",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventName",
+                        "value": "booking"
+                    },
+                    {
+                        "type": "TAG_REFERENCE",
+                        "key": "measurementId",
+                        "value": "*UPDATE* [TAG] GA4 - Tracking Code"
+                    }
+                ],
+                "fingerprint": "1662600490549",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "tagId": "34",
+                "name": "*UPDATE* [TAG] GA4 - Tracking Code",
+                "type": "gaawc",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "sendPageView",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "measurementId",
+                        "value": "G-XXXXXXXXXX"
+                    }
+                ],
+                "fingerprint": "1608165983361",
+                "firingTriggerId": [
+                    "2147479553"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "tagId": "35",
+                "name": "[TAG] GA4 - Event - Click to Call",
+                "type": "gaawe",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "sendEcommerceData",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventName",
+                        "value": "click_to_call"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "eventParameters",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "event_level_1"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{Click URL}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "event_level_2"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{Page Path}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "TAG_REFERENCE",
+                        "key": "measurementId",
+                        "value": "*UPDATE* [TAG] GA4 - Tracking Code"
+                    }
+                ],
+                "fingerprint": "1666920028571",
+                "firingTriggerId": [
+                    "5"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "tagId": "36",
+                "name": "[TAG] GA4 - Event - Click to Email",
+                "type": "gaawe",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "sendEcommerceData",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventName",
+                        "value": "click_to_email"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "eventParameters",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "event_level_1"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{Click URL}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "event_level_2"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{Page Path}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "TAG_REFERENCE",
+                        "key": "measurementId",
+                        "value": "*UPDATE* [TAG] GA4 - Tracking Code"
+                    }
+                ],
+                "fingerprint": "1666920006957",
+                "firingTriggerId": [
+                    "3"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "tagId": "37",
+                "name": "[TAG] GA4 - Event - Social Profile",
+                "type": "gaawe",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "sendEcommerceData",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventName",
+                        "value": "social_profile"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "eventParameters",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "event_level_1"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{[VAR] AEV - Click Hostname}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "event_level_2"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{Page Path}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "TAG_REFERENCE",
+                        "key": "measurementId",
+                        "value": "*UPDATE* [TAG] GA4 - Tracking Code"
+                    }
+                ],
+                "fingerprint": "1666919940336",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "tagId": "38",
+                "name": "[TAG] GA4 - Event - Quote",
+                "type": "gaawe",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "sendEcommerceData",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventName",
+                        "value": "quote"
+                    },
+                    {
+                        "type": "TAG_REFERENCE",
+                        "key": "measurementId",
+                        "value": "*UPDATE* [TAG] GA4 - Tracking Code"
+                    }
+                ],
+                "fingerprint": "1662600589298",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "tagId": "39",
+                "name": "[TAG] GA4 - Event - Contact Us",
+                "type": "gaawe",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "sendEcommerceData",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventName",
+                        "value": "contact_form"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "eventParameters",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "event_level_1"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "Submission"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "TAG_REFERENCE",
+                        "key": "measurementId",
+                        "value": "*UPDATE* [TAG] GA4 - Tracking Code"
+                    }
+                ],
+                "fingerprint": "1666919981369",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "tagId": "40",
+                "name": "[TAG] GA4 - Event - Newsletter Signup",
+                "type": "gaawe",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "sendEcommerceData",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventName",
+                        "value": "newsletter"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "eventParameters",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "event_level_1"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "Signup"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "event_level_2"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{Page Path}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "TAG_REFERENCE",
+                        "key": "measurementId",
+                        "value": "*UPDATE* [TAG] GA4 - Tracking Code"
+                    }
+                ],
+                "fingerprint": "1666919966311",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            }
+        ],
+        "trigger": [
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "triggerId": "3",
+                "name": "[TRI] JL - Click to Email",
+                "type": "LINK_CLICK",
+                "filter": [
+                    {
+                        "type": "STARTS_WITH",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "mailto:"
+                            }
+                        ]
+                    }
+                ],
+                "waitForTags": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "checkValidation": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "waitForTagsTimeout": {
+                    "type": "TEMPLATE",
+                    "value": "2000"
+                },
+                "uniqueTriggerId": {
+                    "type": "TEMPLATE"
+                },
+                "fingerprint": "1600209265898"
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "triggerId": "5",
+                "name": "[TRI] JL - Click to Call",
+                "type": "LINK_CLICK",
+                "filter": [
+                    {
+                        "type": "STARTS_WITH",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "tel:"
+                            }
+                        ]
+                    }
+                ],
+                "waitForTags": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "checkValidation": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "waitForTagsTimeout": {
+                    "type": "TEMPLATE",
+                    "value": "2000"
+                },
+                "uniqueTriggerId": {
+                    "type": "TEMPLATE"
+                },
+                "fingerprint": "1600209251051"
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "triggerId": "24",
+                "name": "*UPDATE URL* [TRI] CE - External Link",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "gtm.linkClick"
+                            }
+                        ]
+                    }
+                ],
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{[VAR] AEV - Element URL (Full)}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "test.com.au"
+                            },
+                            {
+                                "type": "BOOLEAN",
+                                "key": "negate",
+                                "value": "true"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1600209474831"
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "triggerId": "26",
+                "name": "[TRI] Scroll Depth",
+                "type": "SCROLL_DEPTH",
+                "fingerprint": "1600209668263",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "verticalThresholdUnits",
+                        "value": "PERCENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "verticalThresholdsPercent",
+                        "value": "10, 25, 50, 75, 100"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "verticalThresholdOn",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "triggerStartOption",
+                        "value": "WINDOW_LOAD"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "horizontalThresholdOn",
+                        "value": "false"
+                    }
+                ]
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "triggerId": "41",
+                "name": "[TRI] AE - Click Listener",
+                "type": "CLICK",
+                "filter": [
+                    {
+                        "type": "MATCH_REGEX",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": ".*"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1612842395880"
+            }
+        ],
+        "variable": [
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "variableId": "4",
+                "name": "*UPDATE* [VAR] GUA Tracking Code",
+                "type": "gas",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "cookieDomain",
+                        "value": "auto"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "doubleClick",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setTrackerName",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useDebugVersion",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useHashAutoLink",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "decorateFormsAutoLink",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableLinkId",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableEcommerce",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackingId",
+                        "value": "UA-00000000-0"
+                    }
+                ],
+                "fingerprint": "1613092447151"
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "variableId": "16",
+                "name": "[VAR] AEV - Click Hostname",
+                "type": "aev",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "stripWww",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "varType",
+                        "value": "URL"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "component",
+                        "value": "HOST"
+                    }
+                ],
+                "fingerprint": "1601504180946",
+                "formatValue": {}
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "variableId": "23",
+                "name": "[VAR] AEV - Element URL (Full)",
+                "type": "aev",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "varType",
+                        "value": "URL"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "component",
+                        "value": "URL"
+                    }
+                ],
+                "fingerprint": "1601504204125",
+                "formatValue": {}
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "variableId": "29",
+                "name": "[VAR] AEV - Element Value",
+                "type": "aev",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "varType",
+                        "value": "ATTRIBUTE"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "attribute",
+                        "value": "value"
+                    }
+                ],
+                "fingerprint": "1601504192582",
+                "formatValue": {}
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "variableId": "30",
+                "name": "[VAR] AEV - Click URL Path",
+                "type": "aev",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "varType",
+                        "value": "URL"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "component",
+                        "value": "PATH"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "defaultPages"
+                    }
+                ],
+                "fingerprint": "1601504309766",
+                "formatValue": {}
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "variableId": "31",
+                "name": "[VAR] JSV - dataLayer.gtmDom",
+                "type": "j",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "window.google_tag_manager.dataLayer.gtmDom"
+                    }
+                ],
+                "fingerprint": "1601504485523",
+                "formatValue": {}
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "variableId": "32",
+                "name": "[VAR] JSV - dataLayer.gtmLoad",
+                "type": "j",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "window.google_tag_manager.dataLayer.gtmLoad"
+                    }
+                ],
+                "fingerprint": "1601504515662",
+                "formatValue": {}
+            }
+        ],
+        "builtInVariable": [
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "type": "PAGE_URL",
+                "name": "Page URL"
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "type": "PAGE_HOSTNAME",
+                "name": "Page Hostname"
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "type": "PAGE_PATH",
+                "name": "Page Path"
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "type": "REFERRER",
+                "name": "Referrer"
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "type": "EVENT",
+                "name": "Event"
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "type": "CLICK_ELEMENT",
+                "name": "Click Element"
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "type": "CLICK_CLASSES",
+                "name": "Click Classes"
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "type": "CLICK_ID",
+                "name": "Click ID"
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "type": "CLICK_TARGET",
+                "name": "Click Target"
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "type": "CLICK_URL",
+                "name": "Click URL"
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "type": "CLICK_TEXT",
+                "name": "Click Text"
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "type": "FORM_ELEMENT",
+                "name": "Form Element"
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "type": "FORM_CLASSES",
+                "name": "Form Classes"
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "type": "FORM_ID",
+                "name": "Form ID"
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "type": "FORM_TARGET",
+                "name": "Form Target"
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "type": "FORM_URL",
+                "name": "Form URL"
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "type": "FORM_TEXT",
+                "name": "Form Text"
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "type": "NEW_HISTORY_FRAGMENT",
+                "name": "New History Fragment"
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "type": "OLD_HISTORY_FRAGMENT",
+                "name": "Old History Fragment"
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "type": "NEW_HISTORY_STATE",
+                "name": "New History State"
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "type": "OLD_HISTORY_STATE",
+                "name": "Old History State"
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "type": "HISTORY_SOURCE",
+                "name": "History Source"
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "type": "SCROLL_DEPTH_THRESHOLD",
+                "name": "Scroll Depth Threshold"
+            }
+        ],
+        "fingerprint": "1666922440498",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/1925720039/containers/32038133/versions/0?apiLink=version"
+    }
+}
