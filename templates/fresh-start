@@ -1,0 +1,76 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2023-07-25 03:12:48",
+    "containerVersion": {
+        "path": "accounts/6000201997/containers/136117704/versions/1",
+        "accountId": "6000201997",
+        "containerId": "136117704",
+        "containerVersionId": "1",
+        "name": "Empty Container",
+        "container": {
+            "path": "accounts/6000201997/containers/136117704",
+            "accountId": "6000201997",
+            "containerId": "136117704",
+            "name": "Fresh Start",
+            "publicId": "GTM-57X63LR4",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1690254276958",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6000201997/containers/136117704/workspaces?apiLink=container",
+            "features": {
+                "supportUserPermissions": true,
+                "supportEnvironments": true,
+                "supportWorkspaces": true,
+                "supportGtagConfigs": false,
+                "supportBuiltInVariables": true,
+                "supportClients": false,
+                "supportFolders": true,
+                "supportTags": true,
+                "supportTemplates": true,
+                "supportTriggers": true,
+                "supportVariables": true,
+                "supportVersions": true,
+                "supportZones": true,
+                "supportTransformations": false
+            },
+            "tagIds": [
+                "GTM-57X63LR4"
+            ]
+        },
+        "builtInVariable": [
+            {
+                "accountId": "6000201997",
+                "containerId": "136117704",
+                "type": "PAGE_URL",
+                "name": "Page URL"
+            },
+            {
+                "accountId": "6000201997",
+                "containerId": "136117704",
+                "type": "PAGE_HOSTNAME",
+                "name": "Page Hostname"
+            },
+            {
+                "accountId": "6000201997",
+                "containerId": "136117704",
+                "type": "PAGE_PATH",
+                "name": "Page Path"
+            },
+            {
+                "accountId": "6000201997",
+                "containerId": "136117704",
+                "type": "REFERRER",
+                "name": "Referrer"
+            },
+            {
+                "accountId": "6000201997",
+                "containerId": "136117704",
+                "type": "EVENT",
+                "name": "Event"
+            }
+        ],
+        "fingerprint": "1690254276962",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6000201997/containers/136117704/versions/1?apiLink=version"
+    }
+}

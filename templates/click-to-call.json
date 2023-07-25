@@ -1,0 +1,204 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2023-07-25 05:05:46",
+    "containerVersion": {
+        "path": "accounts/6000201997/containers/136117704/versions/0",
+        "accountId": "6000201997",
+        "containerId": "136117704",
+        "containerVersionId": "0",
+        "container": {
+            "path": "accounts/6000201997/containers/136117704",
+            "accountId": "6000201997",
+            "containerId": "136117704",
+            "name": "Fresh Start",
+            "publicId": "GTM-57X63LR4",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1690254276958",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6000201997/containers/136117704/workspaces?apiLink=container",
+            "features": {
+                "supportUserPermissions": true,
+                "supportEnvironments": true,
+                "supportWorkspaces": true,
+                "supportGtagConfigs": false,
+                "supportBuiltInVariables": true,
+                "supportClients": false,
+                "supportFolders": true,
+                "supportTags": true,
+                "supportTemplates": true,
+                "supportTriggers": true,
+                "supportVariables": true,
+                "supportVersions": true,
+                "supportZones": true,
+                "supportTransformations": false
+            },
+            "tagIds": [
+                "GTM-57X63LR4"
+            ]
+        },
+        "tag": [
+            {
+                "accountId": "6000201997",
+                "containerId": "136117704",
+                "tagId": "4",
+                "name": "[TAG] GA4 - Event - Click to Call",
+                "type": "gaawe",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "sendEcommerceData",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventName",
+                        "value": "click_to_call"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "eventParameters",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "event_level_1"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{Click URL}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "measurementId",
+                        "value": "none"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "measurementIdOverride",
+                        "value": "{{SELECT GA4 CONFIG TAG IN THE ABOVE DROPDOWN}}"
+                    }
+                ],
+                "fingerprint": "1690261511147",
+                "firingTriggerId": [
+                    "3"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            }
+        ],
+        "trigger": [
+            {
+                "accountId": "6000201997",
+                "containerId": "136117704",
+                "triggerId": "3",
+                "name": "[TRI] JL - Click to Call",
+                "type": "LINK_CLICK",
+                "filter": [
+                    {
+                        "type": "STARTS_WITH",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Click URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "tel:"
+                            }
+                        ]
+                    }
+                ],
+                "waitForTags": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "checkValidation": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "waitForTagsTimeout": {
+                    "type": "TEMPLATE",
+                    "value": "2000"
+                },
+                "uniqueTriggerId": {
+                    "type": "TEMPLATE"
+                },
+                "fingerprint": "1690261508187"
+            }
+        ],
+        "builtInVariable": [
+            {
+                "accountId": "6000201997",
+                "containerId": "136117704",
+                "type": "PAGE_URL",
+                "name": "Page URL"
+            },
+            {
+                "accountId": "6000201997",
+                "containerId": "136117704",
+                "type": "PAGE_HOSTNAME",
+                "name": "Page Hostname"
+            },
+            {
+                "accountId": "6000201997",
+                "containerId": "136117704",
+                "type": "PAGE_PATH",
+                "name": "Page Path"
+            },
+            {
+                "accountId": "6000201997",
+                "containerId": "136117704",
+                "type": "REFERRER",
+                "name": "Referrer"
+            },
+            {
+                "accountId": "6000201997",
+                "containerId": "136117704",
+                "type": "EVENT",
+                "name": "Event"
+            },
+            {
+                "accountId": "6000201997",
+                "containerId": "136117704",
+                "type": "CLICK_CLASSES",
+                "name": "Click Classes"
+            },
+            {
+                "accountId": "6000201997",
+                "containerId": "136117704",
+                "type": "CLICK_ID",
+                "name": "Click ID"
+            },
+            {
+                "accountId": "6000201997",
+                "containerId": "136117704",
+                "type": "CLICK_URL",
+                "name": "Click URL"
+            },
+            {
+                "accountId": "6000201997",
+                "containerId": "136117704",
+                "type": "CLICK_TEXT",
+                "name": "Click Text"
+            }
+        ],
+        "fingerprint": "1690261545963",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6000201997/containers/136117704/versions/0?apiLink=version"
+    }
+}

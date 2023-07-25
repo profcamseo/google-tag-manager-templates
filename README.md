@@ -1,7 +1,7 @@
-# Google Tag Manager Template
-A Google Tag Manager (GTM) template file for use of setup of websites.
+# Google Tag Manager Templates
+A Google Tag Manager (GTM) template files for use of setup of websites.
 
-This template contains tags for Google Analytics Property 4 (GA4).
+These templates contains tags for Google Analytics Property 4 (GA4).
 
 You will need to create the following 'Custom Dimensions' under 'Admin > Property > Custom Definitions > Custom Dimensions' so you can use them in GA4:
 - event_level_1
@@ -23,7 +23,12 @@ You will need to also create these as 'Custom Dimensions' if you choose to do th
 - Tag Assistant Legacy (by Google): https://chrome.google.com/webstore/detail/tag-assistant-legacy-by-g/kejbdjndbnbjgmefkgdddjlbokphdefk
 - dataslayer: https://chrome.google.com/webstore/detail/dataslayer/ikbablmmjldhamhcldjjigniffkkjgpo
 
-## GUA Note
-Google has annouced that on July 1, 2023 Google Universal Analytics will be sunset and stop processing new hits meaning no new data will be collected.
+## Other Chrome Extensions
+- Datalayer Checker (https://chrome.google.com/webstore/detail/datalayer-checker/ffljdddodmkedhkcjhpmdajhjdbkogke)
+- Tag Assistant Companion (https://chrome.google.com/webstore/detail/tag-assistant-companion/jmekfmbnaedfebfnmakmokmlfpblbfdm)
+- Tag Assistant for Conversions Beta (https://chrome.google.com/webstore/detail/tag-assistant-for-convers/llpfnmnallbompdmklfkcibfpcfpncdd)
+- WASP.inspector: Analytics Solution Profiler (https://chrome.google.com/webstore/detail/waspinspector-analytics-s/niaoghengfohplclhbjnjheodgkejpih)
+## GUA (Universal Analytics) Note
+Google announced that on July 1, 2023 Google Universal Analytics was sunset and stopped processing new hits meaning no new data would be collected.
 
-You will be still able to access your previously processed data for "at least six months"
+They further stated that you will be still able to access your previously processed data for "at least six months"
