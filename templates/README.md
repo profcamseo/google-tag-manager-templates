@@ -9,14 +9,9 @@
 
 ## Google Tag Manager Templates
 
-### FULL STANDARD SETUP
-This container contains the most common tags a client would need and use
-
-### Fresh Start
-Just a simple empty Google Tag Manager container. It's an easy way to remove everything from a container by importing the JSON and then selecting the 'Overwrite' option.
-
-### Click to Call
-Tracks click to call link clicks, but make sure the clickable phone numbers begin with (tel:)
-
-### Click to Email
-Tracks click to email link clicks, but make sure the clickable emails numbers begin with (mailto:)
+| Name | File Name | Description |
+| --- | --- | --- |
+| **FULL STANDARD SETUP** | full-standard-setup | This container contains the most common tags a client would need and use |
+| **Fresh Start** | fresh-start | Just a simple empty Google Tag Manager container. It's an easy way to remove everything from a container by importing the JSON and then selecting the 'Overwrite' option. |
+| **Click to Call** | click-to-call | Tracks click to call link clicks, but make sure the clickable phone numbers begin with (tel:) |
+| **Click to Email** | click-to-email | Tracks click to email link clicks, but make sure the clickable emails numbers begin with (mailto:) |
