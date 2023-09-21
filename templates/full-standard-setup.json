@@ -1,6 +1,6 @@
 {
     "exportFormatVersion": 2,
-    "exportTime": "2023-06-19 00:18:19",
+    "exportTime": "2023-09-21 00:33:44",
     "containerVersion": {
         "path": "accounts/1925720039/containers/32038133/versions/0",
         "accountId": "1925720039",
@@ -86,9 +86,9 @@
                         "value": "booking"
                     },
                     {
-                        "type": "TAG_REFERENCE",
-                        "key": "measurementId",
-                        "value": "*UPDATE* [TAG] SG - GA4 - Tracking Code"
+                        "type": "TEMPLATE",
+                        "key": "measurementIdOverride",
+                        "value": "G-XXXXXXXXXX"
                     }
                 ],
                 "fingerprint": "1662600490549",
@@ -104,23 +104,39 @@
                 "accountId": "1925720039",
                 "containerId": "32038133",
                 "tagId": "34",
-                "name": "*UPDATE* [TAG] SG - GA4 - Tracking Code",
-                "type": "gaawc",
+                "name": "[TAG] SG - GA4 - Tracking Code",
+                "type": "googtag",
                 "parameter": [
                     {
-                        "type": "BOOLEAN",
-                        "key": "sendPageView",
-                        "value": "true"
+                        "type": "TEMPLATE",
+                        "key": "tagId",
+                        "value": "{{*UPDATE* [VAR] SG - CNS - GA4 Measurement ID (G-XXXXXXXXXX)}}"
                     },
                     {
-                        "type": "TEMPLATE",
-                        "key": "measurementId",
-                        "value": "G-XXXXXXXXXX"
+                        "type": "LIST",
+                        "key": "configSettingsTable",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "send_page_view"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "true"
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ],
-                "fingerprint": "1608165983361",
+                "fingerprint": "1695252941616",
                 "firingTriggerId": [
-                    "2147479553"
+                    "2147479573"
                 ],
                 "tagFiringOption": "ONCE_PER_EVENT",
                 "monitoringMetadata": {
@@ -143,25 +159,20 @@
                         "value": "false"
                     },
                     {
-                        "type": "TEMPLATE",
-                        "key": "eventName",
-                        "value": "click_to_call"
-                    },
-                    {
                         "type": "LIST",
-                        "key": "eventParameters",
+                        "key": "eventSettingsTable",
                         "list": [
                             {
                                 "type": "MAP",
                                 "map": [
                                     {
                                         "type": "TEMPLATE",
-                                        "key": "name",
+                                        "key": "parameter",
                                         "value": "event_level_1"
                                     },
                                     {
                                         "type": "TEMPLATE",
-                                        "key": "value",
+                                        "key": "parameterValue",
                                         "value": "{{Click URL}}"
                                     }
                                 ]
@@ -169,9 +180,14 @@
                         ]
                     },
                     {
-                        "type": "TAG_REFERENCE",
-                        "key": "measurementId",
-                        "value": "*UPDATE* [TAG] SG - GA4 - Tracking Code"
+                        "type": "TEMPLATE",
+                        "key": "eventName",
+                        "value": "click_to_call"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "measurementIdOverride",
+                        "value": "G-XXXXXXXXXX"
                     }
                 ],
                 "fingerprint": "1687133728835",
@@ -199,25 +215,20 @@
                         "value": "false"
                     },
                     {
-                        "type": "TEMPLATE",
-                        "key": "eventName",
-                        "value": "click_to_email"
-                    },
-                    {
                         "type": "LIST",
-                        "key": "eventParameters",
+                        "key": "eventSettingsTable",
                         "list": [
                             {
                                 "type": "MAP",
                                 "map": [
                                     {
                                         "type": "TEMPLATE",
-                                        "key": "name",
+                                        "key": "parameter",
                                         "value": "event_level_1"
                                     },
                                     {
                                         "type": "TEMPLATE",
-                                        "key": "value",
+                                        "key": "parameterValue",
                                         "value": "{{Click URL}}"
                                     }
                                 ]
@@ -225,9 +236,14 @@
                         ]
                     },
                     {
-                        "type": "TAG_REFERENCE",
-                        "key": "measurementId",
-                        "value": "*UPDATE* [TAG] SG - GA4 - Tracking Code"
+                        "type": "TEMPLATE",
+                        "key": "eventName",
+                        "value": "click_to_email"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "measurementIdOverride",
+                        "value": "G-XXXXXXXXXX"
                     }
                 ],
                 "fingerprint": "1687133721234",
@@ -255,25 +271,20 @@
                         "value": "false"
                     },
                     {
-                        "type": "TEMPLATE",
-                        "key": "eventName",
-                        "value": "social"
-                    },
-                    {
                         "type": "LIST",
-                        "key": "eventParameters",
+                        "key": "eventSettingsTable",
                         "list": [
                             {
                                 "type": "MAP",
                                 "map": [
                                     {
                                         "type": "TEMPLATE",
-                                        "key": "name",
+                                        "key": "parameter",
                                         "value": "event_level_1"
                                     },
                                     {
                                         "type": "TEMPLATE",
-                                        "key": "value",
+                                        "key": "parameterValue",
                                         "value": "link"
                                     }
                                 ]
@@ -283,12 +294,12 @@
                                 "map": [
                                     {
                                         "type": "TEMPLATE",
-                                        "key": "name",
+                                        "key": "parameter",
                                         "value": "event_level_2"
                                     },
                                     {
                                         "type": "TEMPLATE",
-                                        "key": "value",
+                                        "key": "parameterValue",
                                         "value": "{{[VAR] SG - AEV - Click Hostname}}"
                                     }
                                 ]
@@ -296,9 +307,14 @@
                         ]
                     },
                     {
-                        "type": "TAG_REFERENCE",
-                        "key": "measurementId",
-                        "value": "*UPDATE* [TAG] SG - GA4 - Tracking Code"
+                        "type": "TEMPLATE",
+                        "key": "eventName",
+                        "value": "social"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "measurementIdOverride",
+                        "value": "G-XXXXXXXXXX"
                     }
                 ],
                 "fingerprint": "1687133486667",
@@ -334,9 +350,9 @@
                         "value": "quote"
                     },
                     {
-                        "type": "TAG_REFERENCE",
-                        "key": "measurementId",
-                        "value": "*UPDATE* [TAG] SG - GA4 - Tracking Code"
+                        "type": "TEMPLATE",
+                        "key": "measurementIdOverride",
+                        "value": "G-XXXXXXXXXX"
                     }
                 ],
                 "fingerprint": "1662600589298",
@@ -361,25 +377,20 @@
                         "value": "false"
                     },
                     {
-                        "type": "TEMPLATE",
-                        "key": "eventName",
-                        "value": "contact_form"
-                    },
-                    {
                         "type": "LIST",
-                        "key": "eventParameters",
+                        "key": "eventSettingsTable",
                         "list": [
                             {
                                 "type": "MAP",
                                 "map": [
                                     {
                                         "type": "TEMPLATE",
-                                        "key": "name",
+                                        "key": "parameter",
                                         "value": "event_level_1"
                                     },
                                     {
                                         "type": "TEMPLATE",
-                                        "key": "value",
+                                        "key": "parameterValue",
                                         "value": "form_successful"
                                     }
                                 ]
@@ -387,9 +398,14 @@
                         ]
                     },
                     {
-                        "type": "TAG_REFERENCE",
-                        "key": "measurementId",
-                        "value": "*UPDATE* [TAG] SG - GA4 - Tracking Code"
+                        "type": "TEMPLATE",
+                        "key": "eventName",
+                        "value": "contact_form"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "measurementIdOverride",
+                        "value": "G-XXXXXXXXXX"
                     }
                 ],
                 "fingerprint": "1687133709931",
@@ -414,25 +430,20 @@
                         "value": "false"
                     },
                     {
-                        "type": "TEMPLATE",
-                        "key": "eventName",
-                        "value": "newsletter"
-                    },
-                    {
                         "type": "LIST",
-                        "key": "eventParameters",
+                        "key": "eventSettingsTable",
                         "list": [
                             {
                                 "type": "MAP",
                                 "map": [
                                     {
                                         "type": "TEMPLATE",
-                                        "key": "name",
+                                        "key": "parameter",
                                         "value": "event_level_1"
                                     },
                                     {
                                         "type": "TEMPLATE",
-                                        "key": "value",
+                                        "key": "parameterValue",
                                         "value": "signup"
                                     }
                                 ]
@@ -440,9 +451,14 @@
                         ]
                     },
                     {
-                        "type": "TAG_REFERENCE",
-                        "key": "measurementId",
-                        "value": "*UPDATE* [TAG] SG - GA4 - Tracking Code"
+                        "type": "TEMPLATE",
+                        "key": "eventName",
+                        "value": "newsletter"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "measurementIdOverride",
+                        "value": "G-XXXXXXXXXX"
                     }
                 ],
                 "fingerprint": "1687133640005",
@@ -467,25 +483,20 @@
                         "value": "false"
                     },
                     {
-                        "type": "TEMPLATE",
-                        "key": "eventName",
-                        "value": "social"
-                    },
-                    {
                         "type": "LIST",
-                        "key": "eventParameters",
+                        "key": "eventSettingsTable",
                         "list": [
                             {
                                 "type": "MAP",
                                 "map": [
                                     {
                                         "type": "TEMPLATE",
-                                        "key": "name",
+                                        "key": "parameter",
                                         "value": "event_level_1"
                                     },
                                     {
                                         "type": "TEMPLATE",
-                                        "key": "value",
+                                        "key": "parameterValue",
                                         "value": "share"
                                     }
                                 ]
@@ -495,12 +506,12 @@
                                 "map": [
                                     {
                                         "type": "TEMPLATE",
-                                        "key": "name",
+                                        "key": "parameter",
                                         "value": "event_level_2"
                                     },
                                     {
                                         "type": "TEMPLATE",
-                                        "key": "value",
+                                        "key": "parameterValue",
                                         "value": "{{[VAR] SG - AEV - Click Hostname}}"
                                     }
                                 ]
@@ -508,14 +519,54 @@
                         ]
                     },
                     {
-                        "type": "TAG_REFERENCE",
-                        "key": "measurementId",
-                        "value": "*UPDATE* [TAG] SG - GA4 - Tracking Code"
+                        "type": "TEMPLATE",
+                        "key": "eventName",
+                        "value": "social"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "measurementIdOverride",
+                        "value": "G-XXXXXXXXXX"
                     }
                 ],
                 "fingerprint": "1687133587948",
                 "firingTriggerId": [
                     "53"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "tagId": "56",
+                "name": "[TAG] SG - Conversion Linker",
+                "type": "gclidw",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableCrossDomain",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableUrlPassthrough",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableCookieOverrides",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1689292010190",
+                "firingTriggerId": [
+                    "2147479553"
                 ],
                 "tagFiringOption": "ONCE_PER_EVENT",
                 "monitoringMetadata": {
@@ -868,6 +919,180 @@
                 ],
                 "fingerprint": "1601504515662",
                 "formatValue": {}
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "variableId": "57",
+                "name": "[VAR] SG - AEV - Outbound",
+                "type": "aev",
+                "notes": "Checks to see if Element URL is outbound\n\nExample: If link click is an external link",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "varType",
+                        "value": "URL"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "component",
+                        "value": "IS_OUTBOUND"
+                    }
+                ],
+                "fingerprint": "1689830874378",
+                "formatValue": {}
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "variableId": "58",
+                "name": "*UPDATE* [VAR] SG - CNS - GA4 Measurement ID (G-XXXXXXXXXX)",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "G-XXXXXXXXXX"
+                    }
+                ],
+                "fingerprint": "1695253651926",
+                "formatValue": {}
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "variableId": "59",
+                "name": "[VAR] SG - AEV - Element URL (Query)",
+                "type": "aev",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "varType",
+                        "value": "URL"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "component",
+                        "value": "QUERY"
+                    }
+                ],
+                "fingerprint": "1695253643735",
+                "formatValue": {}
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "variableId": "60",
+                "name": "[VAR] SG - URL - Query - utm_source",
+                "type": "u",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "component",
+                        "value": "QUERY"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "queryKey",
+                        "value": "utm_source"
+                    }
+                ],
+                "fingerprint": "1695254257075",
+                "formatValue": {}
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "variableId": "61",
+                "name": "[VAR] SG - URL - Query - utm_medium",
+                "type": "u",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "component",
+                        "value": "QUERY"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "queryKey",
+                        "value": "utm_medium"
+                    }
+                ],
+                "fingerprint": "1695254239380",
+                "formatValue": {}
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "variableId": "62",
+                "name": "[VAR] SG - URL - Query - utm_campaign",
+                "type": "u",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "component",
+                        "value": "QUERY"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "queryKey",
+                        "value": "utm_campaign"
+                    }
+                ],
+                "fingerprint": "1695254221314",
+                "formatValue": {}
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "variableId": "63",
+                "name": "[VAR] SG - URL - Query - utm_term",
+                "type": "u",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "component",
+                        "value": "QUERY"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "queryKey",
+                        "value": "utm_term"
+                    }
+                ],
+                "fingerprint": "1695254266350",
+                "formatValue": {}
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "variableId": "64",
+                "name": "[VAR] SG - URL - Query - utm_content",
+                "type": "u",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "component",
+                        "value": "QUERY"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "queryKey",
+                        "value": "utm_content"
+                    }
+                ],
+                "fingerprint": "1695254246110",
+                "formatValue": {}
             }
         ],
         "builtInVariable": [
@@ -976,6 +1201,24 @@
             {
                 "accountId": "1925720039",
                 "containerId": "32038133",
+                "type": "ERROR_MESSAGE",
+                "name": "Error Message"
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "type": "ERROR_URL",
+                "name": "Error URL"
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "type": "ERROR_LINE",
+                "name": "Error Line"
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
                 "type": "NEW_HISTORY_FRAGMENT",
                 "name": "New History Fragment"
             },
@@ -1006,11 +1249,65 @@
             {
                 "accountId": "1925720039",
                 "containerId": "32038133",
+                "type": "DEBUG_MODE",
+                "name": "Debug Mode"
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "type": "VIDEO_PROVIDER",
+                "name": "Video Provider"
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "type": "VIDEO_URL",
+                "name": "Video URL"
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "type": "VIDEO_TITLE",
+                "name": "Video Title"
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "type": "VIDEO_DURATION",
+                "name": "Video Duration"
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "type": "VIDEO_PERCENT",
+                "name": "Video Percent"
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "type": "VIDEO_VISIBLE",
+                "name": "Video Visible"
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "type": "VIDEO_STATUS",
+                "name": "Video Status"
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
+                "type": "VIDEO_CURRENT_TIME",
+                "name": "Video Current Time"
+            },
+            {
+                "accountId": "1925720039",
+                "containerId": "32038133",
                 "type": "SCROLL_DEPTH_THRESHOLD",
                 "name": "Scroll Depth Threshold"
             }
         ],
-        "fingerprint": "1687133899557",
+        "fingerprint": "1695256424358",
         "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/1925720039/containers/32038133/versions/0?apiLink=version"
     }
 }
